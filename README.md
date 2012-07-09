@@ -1,4 +1,4 @@
-﻿Satellite Menu in Center 
+Satellite Menu in Center 
 
 'Path' has a very attractive menu sitting on the center bottom corner of the screen. Satellite Menu is the open version of this menu. 
 For the ones who didnt see path, the menu consists of a main button on the center bottom of the screen. When the user clicks on this button, a number of buttons are popped out of this button. I have resembled this structure to a planet and satellites and thats why I gave the name of this project. 
@@ -36,21 +36,13 @@ totalSpacingDegree The degree between the first and the last item.
 closeOnClick Defines if the menu shall collapse after clicking on a menu item. 
 expandDuration The duration of expand and collapse operations in milliseconds. 
 After defining the view in XML, some menu items can be added from code:
-SatelliteMenu menu = (SatelliteMenu) findViewById(R.id.menu);
-List<SatelliteMenuItem> items = new ArrayList<SatelliteMenuItem>();
-items.add(new SatelliteMenuItem(1, R.drawable.ic_1));
-items.add(new SatelliteMenuItem(2, R.drawable.ic_3));
-items.add(new SatelliteMenuItem(3, R.drawable.ic_4));
-items.add(new SatelliteMenuItem(4, R.drawable.ic_5));
-items.add(new SatelliteMenuItem(5, R.drawable.ic_6));
-items.add(new SatelliteMenuItem(6, R.drawable.ic_2));
+
+
+
 Each menu item takes the ID of the item and the drawable resource for the item. 
 In order to listen clicks on items:
-menu.setOnItemClickedListener(new SateliteClickedListener() {
-  public void eventOccured(int id) {
-    Log.i("sat", "Clicked on " + id);
-  }
-});
+
+
 The click event gives the ID of the item which was defined when adding it. 
 
 
